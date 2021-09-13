@@ -1,0 +1,29 @@
+<html>
+<head>
+   <script language="javascript" type="text/javascript" src="asd.js"></script>
+
+
+</head>
+
+<body>
+
+<form name="form1" action="next.html" method="get">
+name:<input type ="text" id="name" name="n">
+<input type="submit" value="next" >
+<button type="button" id="print" onClick="testJS()"> Print </button>
+</form>
+
+<script>function testJS() {
+    var b = document.getElementById('name').value,
+        url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(b);
+
+    document.location.href = url;
+}
+</script>
+<script src="asd.js"></script>
+</body>
+
+</html>
+
+
+
